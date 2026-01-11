@@ -122,6 +122,62 @@
     .project-card video, .project-card img {width:100%; border-radius:10px; margin-bottom:10px;}
     .project-card a {text-decoration:none; color:#457b9d; font-weight:600;}
 
+
+/* ---- Education / Degree Section ---- */
+.degree-section {
+  padding: 60px 10%;
+}
+
+.degree-section h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  background: linear-gradient(45deg,#b5838d,#6d6875,#457b9d,#ffb4a2);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.degree-card {
+  max-width: 900px;
+  margin: auto;
+  background: #fff;
+  border-radius: 20px;
+  display: flex;
+  gap: 40px;
+  padding: 30px;
+  align-items: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  flex-wrap: wrap;
+}
+
+.degree-card img {
+  width: 250px;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.degree-text {
+  flex: 1;
+  min-width: 250px;
+}
+
+.degree-text h3 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  color: #457b9d;
+}
+
+.degree-text p {
+  color: #555;
+  line-height: 1.6;
+}
+
+
+
+
+
+
     /* ---- Contact Section Styling ---- */
     #contact {
       background: linear-gradient(135deg, #f8e1f4, #e0e7ff, #fce1ec);
@@ -193,7 +249,7 @@
 
   <section id="home" class="hero">
     <video autoplay loop muted playsinline>
-      <source src="Onsale.mp4" type="video/mp4">
+      <source src="onsale.mp4" type="video/mp4">
     </video>
     <div class="hero-content">
       <h2>Hi, I'm Eman Zainab</h2>
@@ -204,7 +260,7 @@
   </section>
 
   <section id="about" class="about">
-    <img src="Profile.jpeg" alt="Eman Zainab Profile">
+    <img src="profile.jpeg" alt="Eman Zainab Profile">
     <div class="about-text">
       <h2>About Me</h2>
       <p>Hello! I'm <strong>Eman Zainab</strong>, a passionate Web & App Developer and UI/UX Designer. I love creating user-friendly designs and functional interfaces. My goal is to blend creativity with clean code for seamless user experiences.</p>
@@ -221,6 +277,29 @@
       <span class="close-btn" onclick="closePopup()">Close</span>
     </div>
   </div>
+ 
+  <section class="degree-section">
+    <h2>Software Engineering Degree</h2>
+  
+    <div class="degree-card">
+      <img src="degree.png" alt="Software Engineering Degree">
+  
+      <div class="degree-text">
+        <h3>Bachelor of Software Engineering</h3>
+        <p>
+          I hold a Bachelor’s degree in Software Engineering, where I gained strong
+          foundations in programming, web development, software design, and
+          problem-solving. During my degree, I worked on multiple academic 
+          projects that strengthened my skills in frontend development,
+          UI/UX design, and application development.
+        </p>
+      </div>
+    </div>
+  </section>
+  
+
+
+
 
   <section id="skills">
     <h2>Skills</h2><br>
@@ -230,7 +309,9 @@
       <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"/><p>JavaScript</p></div>
       <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"/><p>HTML</p></div>
       <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"/><p>CSS</p></div>
+
       <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg"/><p>Canva</p></div>
+      
       <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg"/><p>Unity</p></div>
       <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"/><p>Figma</p></div>
     </div>
@@ -269,7 +350,7 @@
         <a href="https://github.com/EmanChattha" target="_blank">View on GitHub</a>
       </div>
       <div class="project-card">
-        <video autoplay loop muted playsinline><source src="Game.mp4" type="video/mp4"></video>
+        <video autoplay loop muted playsinline><source src="sharpies.mp4" type="video/mp4"></video>
         <p><strong>Sharp Eyes Unity Game</strong><br>Interactive 3D game built in Unity.</p>
         <a href="https://github.com/EmanChattha" target="_blank">View on GitHub</a>
       </div>
